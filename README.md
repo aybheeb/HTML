@@ -1,1 +1,1 @@
-##These are my HTML CSS practices from scractch
+These are my HTML CSS practices from scractch
