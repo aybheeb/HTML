@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <!-- Page Header -->
+    <h1>Homework</h1>
+    <!-- Navigation Link -->
+    <a href="/">Home</a>
+    <!-- Form Title -->
+    <h2>TMCC Workshop Registration Form</h2>
+    <!-- Registration Form -->
+    <form action="/submit" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <!-- Full Name Input -->
+                <label for="name">Full Name: </label>
+                <input type="text" id="name" minlength="6" required>
+            </div>
+            <div>
+                <!-- Email Input -->
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <!-- Password Input -->
+                <label for="password">Password: </label>
+                <input type="password" id="password" minlength="8" maxlength="16" required>
+            </div>
+        </fieldset>
+        <!-- Workshop Selection Section -->
+        <fieldset>
+            <legend>Workshop Selection</legend>
+            <div>
+                <!-- Workshop Dropdown -->
+                <label for="workshop">Select Workshop</label>
+                <select id="workshop" name="workshop">
+                    <option value="">--choose option--</option>
+                    <option value="qr">Qur'an Recitation Basics</option>
+                    <option value="ic">Islamic Calligraphy</option>
+                    <option value="al">Arabic Language Fundamentals</option>
+                </select>
+            </div>
+            <div>
+                <!-- Time-slot Dropdown -->
+                <label for="timeslot">Preferred Time-slot</label>
+                <select>
+                    <option value="">--choose option--</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </div>
+        </fieldset>
+        <!-- Additional Information Section -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            <!-- Special Requirements Textarea -->
+            <label for="special_requirements">Special Requirements</label>
+            <textarea id="special_requirements" placeholder="e.g. Accessibility needs, specific needs etc."></textarea>
+        </fieldset>
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
