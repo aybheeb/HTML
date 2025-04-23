@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/submit" method="post">
+        <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="">--choose option--</option>
+                <option value="sa">Saudi Arabia</option> 
+                <option value="ae">United Arab Emirates</option>
+            </select>   
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
