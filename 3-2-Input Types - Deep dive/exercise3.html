@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise 3</h1>
+    <!-- Form for collecting user information -->
+    <form action="submit" method="post">
+        <!-- Fieldset for personal information -->
+        <fieldset>
+            <legend>Personal information</legend>
+            <div>
+                <!-- Input for user's name -->
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" placeholder="Enter first and last name" required minlength="3">
+            </div>
+            <div>
+                <!-- Input for user's email -->
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div>
+                <!-- Input for uploading a profile picture -->
+                <label for="picture">Profile picture upload: </label>
+                <input id="picture" type="file">
+            </div>
+            <div>
+                <!-- Input for user's birthdate -->
+                <label for="birthdate">Birthdate: </label>
+                <input id="birthdate" type="date" required>
+            </div>
+            <div>
+                <!-- Radio buttons for selecting gender -->
+                <label for="brother">Brother</label>
+                <input id="brother" type="radio" name="gender" value="brother">
+                <label for="sister">Sister</label>
+                <input id="sister" type="radio" name="gender" value="sister">
+            </div>
+        </fieldset>
+        <!-- Fieldset for user preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+            <div>
+                <!-- Textarea for dietary restrictions -->
+                <label for="diet">Dietary restrictions: </label>
+                <textarea id="diet" name="diet" placeholder="write dietary restrictions here"></textarea>
+            </div>
+            <div>
+                <!-- Dropdown for selecting a workshop -->
+                <label for="workshop">Workshop: </label>
+                <select id="workshop" name="workshop">
+                    <option value="">--choose option--</option>
+                    <option value="quran">Quran Recitation</option>
+                    <option value="hadith">Understanding Hadith</option>
+                    <option value="fiqh">Basics of Fiqh</option>
+                    <option value="seerah">Seerah of the Prophet</option>
+                    <option value="dua">Power of Dua</option>
+                    <option value="youth">Youth Empowerment in Islam</option>
+                    <option value="family">Family Values in Islam</option>
+                </select>
+            </div>
+            <div>
+                <!-- Input for selecting a color -->
+                <label for="color">Name color: </label>
+                <input id="color" type="color" name="color">
+            </div>
+            <div>
+                <!-- Input for selecting accommodation dates -->
+                <label for="date">Accomodation dates: </label>
+                <input id="date" type="date" name="date">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
