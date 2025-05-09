@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <h1>Exercise 2</h1>
+    <form action="submit" method="post">
+        <div>
+            <label for="prayer">Select Prayer: </label>
+            <select id="prayer">
+                <option value="">--choose option--</option>
+                <option value="fjr">Fajr</option>
+                <option value="dh">Dhuhr</option>
+                <option value="asr">Asr</option>
+                <option value="mag">Maghrib</option>
+                <option value="ish">Ishaa</option>
+            </select>
+        </div>
+        <div>
+            <label>Time: </label>
+            <input id="time" type="time">
+        </div>
+        <div>
+            <label for="daily">Repeat daily </label>
+            <input id="daily" type="radio" value="repeat">
+        </div>
+        <div>
+            <label for="volume">Volume </label>
+            <input id="volume" min="10" max="100" step="5" type="range">
+        </div>
+        <div>
+            <label>Notification sound</label>
+            <select>
+
+            </select>
+        </div>
+        <button type="button">Submit</button>
+    </form>
+</body>
+</html>
