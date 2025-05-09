@@ -8,7 +8,11 @@
 <body>
     <h1>Exercise 2</h1>
     <form action="submit" method="post">
-        <div>
+        <!-- Prayer Reminder Section -->
+        <fieldset>
+        <legend>Prayer Reminder</legend>
+            <div>
+            <!-- Dropdown to select a prayer -->
             <label for="prayer">Select Prayer: </label>
             <select id="prayer">
                 <option value="">--choose option--</option>
@@ -20,23 +24,39 @@
             </select>
         </div>
         <div>
+            <!-- Input to select time -->
             <label>Time: </label>
             <input id="time" type="time">
         </div>
         <div>
-            <label for="daily">Repeat daily </label>
+            <!-- Radio button to repeat daily -->
+            <label for="daily">Repeat daily: </label>
             <input id="daily" type="radio" value="repeat">
         </div>
+        </fieldset>
+        
+        <!-- Notification Settings Section -->
+        <fieldset>
+        <legend>Notification Settings</legend>
         <div>
-            <label for="volume">Volume </label>
+            <!-- Range input to set volume -->
+            <label for="volume">Volume: </label>
             <input id="volume" min="10" max="100" step="5" type="range">
         </div>
         <div>
-            <label>Notification sound</label>
+            <!-- Dropdown to select notification sound -->
+            <label>Notification sound: </label>
             <select>
-
+                <option value="">--choose option--</option>
+                <option value="sound1">Sound 1</option>
+                <option value="sound2">Sound 2</option>
+                <option value="sound3">Sound 3</option>
+                <option value="sound4">Sound 4</option>
+                <option value="sound5">Sound 5</option>
             </select>
         </div>
+        </fieldset>
+        <!-- Submit button -->
         <button type="button">Submit</button>
     </form>
 </body>
