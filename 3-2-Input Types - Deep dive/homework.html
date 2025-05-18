@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>Homework</h1>
+    <form action="submit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div>
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+            </div>
+            <div>
+                <label for="member">Menbership ID: </label>
+                <input type="text" id="member" name="member" required placeholder="Enter your membership ID">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Booking Details</legend>
+            <div>
+                <label for="room">Room selection: </label>
+                <select id="room" name="room" required>
+                    <option value="" disabled selected>Select a room</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date" required placeholder="Select a date">
+            </div>
+            <div>
+                <label for="time">Time slot: </label>
+                <input type="time" id="time" name="time" required placeholder="Select a time">
+            </div>
+            <div>
+                <label for="duration">Duration: </label>
+                <input type="number" id="duration" name="duration" min="1" max="4" required placeholder="Hours (1-4)">
+            </div>
+            <div>
+                <label for="attendees">Number of attendees</label>
+                <input type="number" id="attendees" name="attendees" min="1" max="10" required placeholder="1-10">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Services</legend>
+            <div>
+                <label for="audio">Audio/Visual Equipment</label>
+                <input type="checkbox" id="audio" name="audio">
+            </div>
+            <div>
+                <label for="prayer">Prayer mats</label>
+                <input type="checkbox" id="prayer" name="prayer">
+            </div>
+            <div>
+                <label for="kitchen">Kitchen access</label>
+                <input type="checkbox" id="kitchen" name="kitchen">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Event Details</legend>
+            <div>
+                <label for="even">Event type</label>
+                <select id="even" name="even" required>
+                    <option value="" disabled selected>Select an event type</option>
+                    <option value="eid">Eid Celebration</option>
+                    <option value="iftar">Family Iftar</option>
+                    <option value="lecture">Islamic Lecture</option>
+                    <option value="quran">Quran Study</option>
+                    <option value="youth">Youth Program</option>
+                    <option value="hadith">Hadith Study</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Event description: </label>
+                <textarea id="description" name="description" required placeholder="Describe your event"></textarea>
+            </div>
+            <div>
+                <label for="id">Upload ID: </label>
+                <input type="file" id="id" name="id" accept=".jpg, .jpeg, .png, .pdf" required>
+            </div>
+            <div>
+                <label for="color">Color theme preference: </label>
+                <input type="color" id="color" name="color">
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
