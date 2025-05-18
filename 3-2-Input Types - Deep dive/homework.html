@@ -7,7 +7,9 @@
 </head>
 <body>
     <h1>Homework</h1>
+    <!-- Main form starts here -->
     <form action="submit" method="post">
+        <!-- Personal Information Section -->
         <fieldset>
             <legend>Personal Information</legend>
             <div>
@@ -20,17 +22,20 @@
             </div>
             <div>
                 <label for="phone">Phone: </label>
-                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                <!-- Phone input with pattern -->
+                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <div>
                 <label for="member">Menbership ID: </label>
                 <input type="text" id="member" name="member" required placeholder="Enter your membership ID">
             </div>
         </fieldset>
+        <!-- Booking Details Section -->
         <fieldset>
             <legend>Booking Details</legend>
             <div>
                 <label for="room">Room selection: </label>
+                <!-- Room selection dropdown -->
                 <select id="room" name="room" required>
                     <option value="" disabled selected>Select a room</option>
                     <option value="one">1</option>
@@ -49,13 +54,16 @@
             </div>
             <div>
                 <label for="duration">Duration: </label>
+                <!-- Duration input (1-4 hours) -->
                 <input type="number" id="duration" name="duration" min="1" max="4" required placeholder="Hours (1-4)">
             </div>
             <div>
                 <label for="attendees">Number of attendees</label>
+                <!-- Attendees input (1-10) -->
                 <input type="number" id="attendees" name="attendees" min="1" max="10" required placeholder="1-10">
             </div>
         </fieldset>
+        <!-- Additional Services Section -->
         <fieldset>
             <legend>Additional Services</legend>
             <div>
@@ -71,10 +79,12 @@
                 <input type="checkbox" id="kitchen" name="kitchen">
             </div>
         </fieldset>
+        <!-- Event Details Section -->
         <fieldset>
             <legend>Event Details</legend>
             <div>
                 <label for="even">Event type</label>
+                <!-- Event type dropdown -->
                 <select id="even" name="even" required>
                     <option value="" disabled selected>Select an event type</option>
                     <option value="eid">Eid Celebration</option>
@@ -87,18 +97,32 @@
             </div>
             <div>
                 <label for="description">Event description: </label>
+                <!-- Event description textarea -->
                 <textarea id="description" name="description" required placeholder="Describe your event"></textarea>
             </div>
             <div>
                 <label for="id">Upload ID: </label>
+                <!-- File upload for ID -->
                 <input type="file" id="id" name="id" accept=".jpg, .jpeg, .png, .pdf" required>
             </div>
             <div>
                 <label for="color">Color theme preference: </label>
+                <!-- Color picker -->
                 <input type="color" id="color" name="color">
             </div>
         </fieldset>
+        <!-- Terms and Conditions Checkbox -->
+        <div>
+            <label for="terms">
+                I have read and agree to the 
+                <a href="https://www.iubenda.com/en/help/53008-terms-and-conditions-template" target="_blank" rel="noopener noreferrer">
+                    Terms and Conditions
+                </a>
+            </label>
+            <input type="checkbox" id="terms" name="terms" required>
+        </div>
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
     </form>
-    
 </body>
 </html>
