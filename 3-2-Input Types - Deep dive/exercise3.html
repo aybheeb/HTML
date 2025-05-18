@@ -24,20 +24,20 @@
             </div>
             <div>
                 <!-- Input for uploading a profile picture -->
-                <label for="picture">Profile picture upload: </label>
-                <input id="picture" type="file">
+                <label for="picture">Upload ID: </label>
+                <input id="picture" type="file" name="picture" required>
             </div>
             <div>
                 <!-- Input for user's birthdate -->
                 <label for="birthdate">Birthdate: </label>
-                <input id="birthdate" type="date" required>
+                <input id="birthdate" type="date" name="birthdate" required>
             </div>
             <div>
                 <!-- Radio buttons for selecting gender -->
                 <label for="brother">Brother</label>
-                <input id="brother" type="radio" name="gender" value="brother">
+                <input id="brother" type="radio" name="gender" value="brother" required>
                 <label for="sister">Sister</label>
-                <input id="sister" type="radio" name="gender" value="sister">
+                <input id="sister" type="radio" name="gender" value="sister" required>
             </div>
         </fieldset>
         <!-- Fieldset for user preferences -->
@@ -46,7 +46,7 @@
             <div>
                 <!-- Dropdown for selecting a workshop -->
                 <label for="workshop">Workshop: </label>
-                <select id="workshop" name="workshop">
+                <select id="workshop" name="workshop" required>
                     <option value="">--choose option--</option>
                     <option value="quran">Quran Recitation</option>
                     <option value="hadith">Understanding Hadith</option>
@@ -60,17 +60,17 @@
             <div>
                 <!-- Input for selecting a color -->
                 <label for="color">Name color: </label>
-                <input id="color" type="color" name="color">
+                <input id="color" type="color" name="color" required>
             </div>
             <div>
                 <!-- Input for selecting accommodation dates -->
-                <label for="date">Accomodation dates: </label>
-                <input id="date" type="date" name="date">
+                <label for="date">Accommodation dates: </label>
+                <input id="date" type="date" name="date" required>
             </div>
                         <div>
                 <!-- Textarea for dietary restrictions -->
                 <label for="diet">Dietary restrictions: </label>
-                <textarea id="diet" name="diet" placeholder="write dietary restrictions here"></textarea>
+                <textarea id="diet" name="diet" placeholder="write dietary restrictions here" required></textarea>
             </div>
         </fieldset>
     </form>

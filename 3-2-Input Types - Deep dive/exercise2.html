@@ -14,7 +14,7 @@
             <div>
             <!-- Dropdown to select a prayer -->
             <label for="prayer">Select Prayer: </label>
-            <select id="prayer">
+            <select id="prayer" name="prayer" required>
                 <option value="">--choose option--</option>
                 <option value="fjr">Fajr</option>
                 <option value="dh">Dhuhr</option>
@@ -26,12 +26,12 @@
         <div>
             <!-- Input to select time -->
             <label>Time: </label>
-            <input id="time" type="time">
+            <input id="time" name="time" type="time" required>
         </div>
         <div>
             <!-- Radio button to repeat daily -->
             <label for="daily">Repeat daily: </label>
-            <input id="daily" type="radio" value="repeat">
+            <input id="daily" name="repeat" type="radio" value="repeat" required>
         </div>
         </fieldset>
         
@@ -41,12 +41,12 @@
         <div>
             <!-- Range input to set volume -->
             <label for="volume">Volume: </label>
-            <input id="volume" min="10" max="100" step="5" type="range">
+            <input id="volume" name="volume" min="10" max="100" step="5" type="range" required>
         </div>
         <div>
             <!-- Dropdown to select notification sound -->
-            <label>Notification sound: </label>
-            <select>
+            <label for="sound">Notification sound: </label>
+            <select id="sound" name="sound" required>
                 <option value="">--choose option--</option>
                 <option value="sound1">Sound 1</option>
                 <option value="sound2">Sound 2</option>
@@ -57,7 +57,7 @@
         </div>
         </fieldset>
         <!-- Submit button -->
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
