@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <!-- Page Header -->
+    <header>    
+        <h1>Contact Form</h1>
+    </header>
+    <main>
+        <!-- Contact Form-->
+        <form action="submit" method="post">
+            <!-- Contact Information Section -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" placeholder="Enter full name" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="phone">Phone number: </label>
+                    <input id="phone" type="tel" placeholder="(000) 000-0000" required>
+                </div>
+            </fieldset>
+            <!-- Additional Information Section -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>
+                    <label for="age">Age: </label>
+                    <input id="age" type="number" placeholder="18+" min="18" required>
+                </div>
+                <div>   
+                    <label for="message">Message: </label>
+                    <textarea id="message" placeholder="Additional Information" required></textarea>
+                </div>
+            </fieldset>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>  
+        </form>
+        <!-- Contact Form End -->
+    </main>
+    <!-- Page Footer -->
+    <footer>
+
+    </footer>
+</body>
+</html>
