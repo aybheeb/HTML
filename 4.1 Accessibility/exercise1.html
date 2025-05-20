@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <!-- Document metadata and title -->
+</head>
+<body>
+    <header>
+        <!-- Site logo -->
+        <img src="assets/halaleliteslogo.jpg" alt="halal elites logo" width="200">
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="https://halalelites.dev/">About us</a></li>
+                <li><a href="https://halalelites.dev/">Programs</a></li>
+                <li><a href="#contact">Conatact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Accessible site search form -->
+        <form role="search" aria-label="Site search" action="/search" method="get">
+            <div class="search-wrapper">
+                <label for="site-search">Search the site:</label>
+                <input 
+                    type="search" 
+                    id="site-search" 
+                    name="site-search"
+                    aria-label="Search through site content"
+                    placeholder="Enter keywords..."
+                    required
+                >
+                <button type="submit" aria-label="Submit search">
+                    Search
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <!-- Copyright and social media links -->
+        <p>&copy; 2025 Halal Elites. All rights reserved.</p>
+        <p id="contact">Follow us on:
+            <a href="https://www.facebook.com/halalelites">Facebook</a>,
+            <a href="https://www.instagram.com/halalelites">Instagram</a>,
+            <a href="https://www.twitter.com/halalelites">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>
