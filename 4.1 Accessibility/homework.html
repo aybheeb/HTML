@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <!-- Header section with logo, name, and navigation -->
+    <header role="banner">
+        <!-- Logo image -->
+        <img src="assets/halaleliteslogo.jpg" alt="halaleliteslogo" width="200" height="200" aria-label="Halal Elites Logo">
+        <h1>Habeeb Sowemimo</h1>
+        <!-- Main navigation menu -->
+        <nav aria-label="Main Navigation" role="navigation">
+            <button aria-expanded="false" aria-controls="nav-menu">Menu</button>
+            <ul id="nav-menu">
+                <li><a href="#projects">Personal Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="https://github.com/aybheeb" target="_blank">Github</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" id="main-content">
+        <!-- Projects section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <!-- Project 1 -->
+                <div role="button" tabindex="0" aria-label="Project 1">
+                    <h3>Project 1 Title</h3>
+                </div>
+                <img src="assets/51f0c9a0d24017133812cc54bc534f3b.jpg" alt="thumbsup1" width="200" height="200">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore molestias aspernatur nemo magnam quibusdam ut nesciunt. Exercitationem, eius quibusdam iure dolorem dolor debitis obcaecati dolorum id deserunt nemo repellat enim. Totam nam vero repellat assumenda repellendus dignissimos, aspernatur quas aut perspiciatis id placeat asperiores. Alias cum minima ab inventore.</p>  
+                <!-- Project 2 -->
+                <div role="button" tabindex="0" aria-label="Project 2">
+                    <h3>Project 2 Title</h3>
+                </div>
+                <img src="assets/adac6419a7c00158f7e8de77e310f07d.jpg" alt="thumbsup2" width="200" height="200">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore molestias aspernatur nemo magnam quibusdam ut nesciunt. Exercitationem, eius quibusdam iure dolorem dolor debitis obcaecati dolorum id deserunt nemo repellat enim. Totam nam vero repellat assumenda repellendus dignissimos, aspernatur quas aut perspiciatis id placeat asperiores. Alias cum minima ab inventore.</p>
+            </article>
+        </section>
+        <!-- Education section -->
+        <section id="education">
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore molestias aspernatur nemo magnam quibusdam ut nesciunt. Exercitationem, eius quibusdam iure dolorem dolor debitis obcaecati dolorum id deserunt nemo repellat enim. Totam nam vero repellat assumenda repellendus dignissimos, aspernatur quas aut perspiciatis id placeat asperiores. Alias cum minima ab inventore.</p>
+        </section>
+        <!-- Skills section -->
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+    </main>
+    <!-- Footer with contact form -->
+    <footer role="contentinfo">
+        <h2 id="contact">Contact me</h2>
+        <form action="submit" method="post" aria-label="Contact Form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+            <!-- Status message for form submission -->
+            <div aria-live="polite" role="status">
+                Message sent!
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
