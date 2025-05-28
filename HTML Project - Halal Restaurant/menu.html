@@ -28,218 +28,227 @@
     </header>
     <main>
         <h1>Our Menu</h1>
+        <nav class="menu-section-nav" aria-label="Menu Sections">
+            <ul>
+            <li><a href="#appetizers">Appetizers</a></li>
+            <li><a href="#main-courses">Main Courses</a></li>
+            <li><a href="#vegetarian-specialties">Vegetarian Specialties</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+            </ul>
+        </nav>
         
         <!-- Appetizers Section -->
-        <section class="appetizers">
+        <section class="appetizers" id="appetizers">
             <h2>Appetizers</h2>
             <div class="menu-items">
-                <!-- Each menu item is wrapped in an article -->
-                <article class="menu-item">
-                    <h3>Samosa Platter</h3>
-                    <p class="description">Crispy pastries filled with seasoned potatoes and peas</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="spicy">Mildly Spicy</span>
-                    </p>
-                    <p class="price">$6.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Chicken Pakora</h3>
-                    <p class="description">Tender chicken pieces dipped in spiced chickpea batter and fried</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Medium Spicy</span>
-                    </p>
-                    <p class="price">$8.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Vegetable Spring Rolls</h3>
-                    <p class="description">Crispy rolls stuffed with mixed vegetables and served with sweet chili sauce</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                    </p>
-                    <p class="price">$5.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Chana Chaat</h3>
-                    <p class="description">Chickpeas tossed with onions, tomatoes, spices, and tangy chutneys</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$7.49</p>
-                </article>
+            <!-- Each menu item is wrapped in an article -->
+            <article class="menu-item">
+                <h3>Samosa Platter</h3>
+                <p class="description">Crispy pastries filled with seasoned potatoes and peas</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="spicy">Mildly Spicy</span>
+                </p>
+                <p class="price">$6.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Chicken Pakora</h3>
+                <p class="description">Tender chicken pieces dipped in spiced chickpea batter and fried</p>
+                <p class="dietary-info">
+                <span class="spicy">Medium Spicy</span>
+                </p>
+                <p class="price">$8.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Vegetable Spring Rolls</h3>
+                <p class="description">Crispy rolls stuffed with mixed vegetables and served with sweet chili sauce</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                </p>
+                <p class="price">$5.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Chana Chaat</h3>
+                <p class="description">Chickpeas tossed with onions, tomatoes, spices, and tangy chutneys</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$7.49</p>
+            </article>
             </div>
         </section>
 
         <!-- Main Courses Section -->
-        <section class="main-course">
+        <section class="main-course" id="main-courses">
             <h2>Main Courses</h2>
             <div class="menu-items">
-                <!-- Featured dishes are marked with 'featured' class -->
-                <article class="menu-item featured">
-                    <h3>Special Chicken Biryani</h3>
-                    <p class="description">Fragrant basmati rice cooked with tender chicken and aromatic spices</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Medium Spicy</span>
-                    </p>
-                    <p class="price">$15.99</p>
-                </article>
-                <article class="menu-item featured">
-                    <h3>Mixed Grill Platter</h3>
-                    <p class="description">Assortment of grilled chicken, lamb, and beef kebabs with fresh naan</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Mild</span>
-                    </p>
-                    <p class="price">$24.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Butter Chicken</h3>
-                    <p class="description">Tender chicken in rich tomato-cream curry sauce</p>
-                    <p class="dietary-info">
-                        <span class="mild">Mild</span>
-                    </p>
-                    <p class="price">$16.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Lamb Rogan Josh</h3>
-                    <p class="description">Slow-cooked lamb in a spiced tomato and onion gravy</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Medium Spicy</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$18.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Beef Kofta Curry</h3>
-                    <p class="description">Halal beef meatballs simmered in aromatic curry sauce</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Mild</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$17.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Chicken Tikka Masala</h3>
-                    <p class="description">Grilled chicken pieces in creamy tomato masala sauce</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Medium Spicy</span>
-                    </p>
-                    <p class="price">$16.49</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Fish Curry</h3>
-                    <p class="description">Fresh fish fillets cooked in coconut and tamarind curry</p>
-                    <p class="dietary-info">
-                        <span class="spicy">Mild</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$17.49</p>
-                </article>
+            <!-- Featured dishes are marked with 'featured' class -->
+            <article class="menu-item featured">
+                <h3>Special Chicken Biryani</h3>
+                <p class="description">Fragrant basmati rice cooked with tender chicken and aromatic spices</p>
+                <p class="dietary-info">
+                <span class="spicy">Medium Spicy</span>
+                </p>
+                <p class="price">$15.99</p>
+            </article>
+            <article class="menu-item featured">
+                <h3>Mixed Grill Platter</h3>
+                <p class="description">Assortment of grilled chicken, lamb, and beef kebabs with fresh naan</p>
+                <p class="dietary-info">
+                <span class="spicy">Mild</span>
+                </p>
+                <p class="price">$24.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p class="description">Tender chicken in rich tomato-cream curry sauce</p>
+                <p class="dietary-info">
+                <span class="mild">Mild</span>
+                </p>
+                <p class="price">$16.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Lamb Rogan Josh</h3>
+                <p class="description">Slow-cooked lamb in a spiced tomato and onion gravy</p>
+                <p class="dietary-info">
+                <span class="spicy">Medium Spicy</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$18.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Beef Kofta Curry</h3>
+                <p class="description">Halal beef meatballs simmered in aromatic curry sauce</p>
+                <p class="dietary-info">
+                <span class="spicy">Mild</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$17.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Chicken Tikka Masala</h3>
+                <p class="description">Grilled chicken pieces in creamy tomato masala sauce</p>
+                <p class="dietary-info">
+                <span class="spicy">Medium Spicy</span>
+                </p>
+                <p class="price">$16.49</p>
+            </article>
+            <article class="menu-item">
+                <h3>Fish Curry</h3>
+                <p class="description">Fresh fish fillets cooked in coconut and tamarind curry</p>
+                <p class="dietary-info">
+                <span class="spicy">Mild</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$17.49</p>
+            </article>
             </div>
         </section>
 
         <!-- Vegetarian Specialties Section -->
-        <section class="vegetarian-dishes">
+        <section class="vegetarian-dishes" id="vegetarian-specialties">
             <h2>Vegetarian Specialties</h2>
             <div class="menu-items">
-                <article class="menu-item">
-                    <h3>Palak Paneer</h3>
-                    <p class="description">Fresh spinach curry with homemade cheese cubes</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$14.99</p>
-                </article>
+            <article class="menu-item">
+                <h3>Palak Paneer</h3>
+                <p class="description">Fresh spinach curry with homemade cheese cubes</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$14.99</p>
+            </article>
             </div>
         </section>
 
         <!-- Desserts Section -->
-        <section class="desserts">
+        <section class="desserts" id="desserts">
             <h2>Desserts</h2>
             <div class="menu-items">
-                <article class="menu-item">
-                    <h3>Gulab Jamun</h3>
-                    <p class="description">Sweet milk dumplings in rose-flavored syrup</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                    </p>
-                    <p class="price">$5.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Kheer</h3>
-                    <p class="description">Creamy rice pudding flavored with cardamom and garnished with nuts</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$4.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Ras Malai</h3>
-                    <p class="description">Soft cheese patties soaked in sweetened, cardamom-flavored milk</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$6.49</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Baklava</h3>
-                    <p class="description">Layers of filo pastry with nuts and honey syrup</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                    </p>
-                    <p class="price">$5.49</p>
-                </article>
+            <article class="menu-item">
+                <h3>Gulab Jamun</h3>
+                <p class="description">Sweet milk dumplings in rose-flavored syrup</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                </p>
+                <p class="price">$5.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Kheer</h3>
+                <p class="description">Creamy rice pudding flavored with cardamom and garnished with nuts</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$4.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Ras Malai</h3>
+                <p class="description">Soft cheese patties soaked in sweetened, cardamom-flavored milk</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$6.49</p>
+            </article>
+            <article class="menu-item">
+                <h3>Baklava</h3>
+                <p class="description">Layers of filo pastry with nuts and honey syrup</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                </p>
+                <p class="price">$5.49</p>
+            </article>
             </div>
         </section>
 
         <!-- Beverages Section -->
-        <section class="beverages">
+        <section class="beverages" id="beverages">
             <h2>Beverages</h2>
             <div class="menu-items">
-                <article class="menu-item">
-                    <h3>Mango Lassi</h3>
-                    <p class="description">Traditional yogurt-based drink with mango</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                    </p>
-                    <p class="price">$3.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Masala Chai</h3>
-                    <p class="description">Spiced Indian tea brewed with milk and aromatic spices</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                    </p>
-                    <p class="price">$2.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Rose Milk</h3>
-                    <p class="description">Chilled milk flavored with rose syrup</p>
-                    <p class="dietary-info">
-                        <span class="vegetarian">Vegetarian</span>
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$2.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Soft Drinks</h3>
-                    <p class="description">Choice of Coke, Diet Coke, Sprite, or Fanta</p>
-                    <p class="dietary-info">
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$1.99</p>
-                </article>
-                <article class="menu-item">
-                    <h3>Bottled Water</h3>
-                    <p class="description">Chilled bottled water</p>
-                    <p class="dietary-info">
-                        <span class="gluten-free">Gluten-Free</span>
-                    </p>
-                    <p class="price">$1.49</p>
-                </article>
+            <article class="menu-item">
+                <h3>Mango Lassi</h3>
+                <p class="description">Traditional yogurt-based drink with mango</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                </p>
+                <p class="price">$3.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Masala Chai</h3>
+                <p class="description">Spiced Indian tea brewed with milk and aromatic spices</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                </p>
+                <p class="price">$2.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Rose Milk</h3>
+                <p class="description">Chilled milk flavored with rose syrup</p>
+                <p class="dietary-info">
+                <span class="vegetarian">Vegetarian</span>
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$2.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Soft Drinks</h3>
+                <p class="description">Choice of Coke, Diet Coke, Sprite, or Fanta</p>
+                <p class="dietary-info">
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$1.99</p>
+            </article>
+            <article class="menu-item">
+                <h3>Bottled Water</h3>
+                <p class="description">Chilled bottled water</p>
+                <p class="dietary-info">
+                <span class="gluten-free">Gluten-Free</span>
+                </p>
+                <p class="price">$1.49</p>
+            </article>
             </div>
         </section>
     </main>

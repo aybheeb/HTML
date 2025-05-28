@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services- Two Spoons</title>
+    <!-- Add your CSS links here -->
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <img src="assets/twoSpoonsLogo.png" alt="Two Spoons Halal Restaurant Logo" width="200" height=auto>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="catering.html">Catering Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Catering Services</h1>
+
+        <!-- Services Overview Section -->
+        <section class="catering-intro">
+            <h2>Let Us Cater Your Next Event</h2>
+            <p>From intimate gatherings to large celebrations, we provide full-service halal catering with the same quality and care as our restaurant dining.</p>
+            <a href="#request-quote" class="cta-link">Request a Quote</a>
+            <img src="assets/catering-setup.png" alt="Elegant catering setup with various dishes" width="800" height="auto">
+        </section>
+
+        <!-- Event Types Section -->
+        <section class="event-types">
+            <h2>Events We Cater</h2>
+            <div class="events-grid">
+                <!-- Wedding Event Type -->
+                <article class="event-type">
+                    <h3>Weddings</h3>
+                    <img src="assets/wedding-setup.png" alt="Wedding reception setup with elegant table arrangements" width="400" height="auto">
+                    <p>Custom menus and elegant presentations for your special day</p>
+                    <a href="#request-quote" class="cta-link">Request a Quote</a>
+                </article>
+
+                <!-- Corporate Event Type -->
+                <article class="event-type">
+                    <h3>Corporate Events</h3>
+                    <img src="assets/corporate-setup.png" alt="Corporate lunch setup with professional presentation" width="400" height="auto">
+                    <p>Professional service for business meetings and conferences</p>
+                    <a href="#request-quote" class="cta-link">Request a Quote</a>
+                </article>
+
+                <!-- Private Party Event Type -->
+                <article class="event-type">
+                    <h3>Private Parties</h3>
+                    <img src="assets/private-party.png" alt="Private party buffet setup" width="400" height="auto">
+                    <p>Customized menus for special occasions</p>
+                    <a href="#request-quote" class="cta-link">Request a Quote</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Catering Packages Section -->
+        <section class="catering-packages">
+            <h2>Our Packages</h2>
+            <div class="packages-container">
+                <!-- Basic Package -->
+                <article class="package">
+                    <h3>Basic Package</h3>
+                    <ul>
+                        <li>2 Main Dishes</li>
+                        <li>3 Side Dishes</li>
+                        <li>Rice and Naan</li>
+                        <li>Basic Dessert Selection</li>
+                        <li>Serving Staff</li>
+                    </ul>
+                    <p>Starting at $25 per person</p>
+                    <a href="#request-quote" class="cta-link">Request a Quote</a>
+                </article>
+
+                <!-- Premium Package -->
+                <article class="package">
+                    <h3>Premium Package</h3>
+                    <ul>
+                        <li>3 Main Dishes</li>
+                        <li>4 Side Dishes</li>
+                        <li>Premium Rice and Bread Selection</li>
+                        <li>Deluxe Dessert Platter</li>
+                        <li>Full Service Staff</li>
+                        <li>Setup and Cleanup</li>
+                    </ul>
+                    <p>Starting at $40 per person</p>
+                    <a href="#request-quote" class="cta-link">Request a Quote</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="catering-inquiry" id="request-quote">
+            <h2>Request a Quote</h2>
+            <form action="submit" method="POST">
+            <!-- Event Type Dropdown -->
+            <div class="form-group">
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="event-type" required>
+                <option value="">Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="private">Private Party</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Number of Guests Input -->
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="20" required placeholder="e.g. 50">
+            </div>
+
+            <!-- Event Date Input -->
+            <div class="form-group">
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required placeholder="MM/DD/YYYY">
+            </div>
+
+            <!-- Contact Name Input -->
+            <div class="form-group">
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required placeholder="Your Name">
+            </div>
+
+            <!-- Contact Email Input -->
+            <div class="form-group">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required placeholder="you@email.com">
+            </div>
+
+            <!-- Special Requests Textarea -->
+            <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" rows="4" placeholder="Let us know about dietary needs, menu preferences, etc."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Request Quote</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section with quick links, business hours, and contact info -->
+    <footer>
+        <section>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="catering.html">Catering Services</a></li>
+                <li><a href="#request-quote">Request Quote</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Business Hours</h4>
+            <ul>
+                <li>Monday - Thursday: 11:00 AM - 9:00 PM</li>
+                <li>Friday - Saturday: 11:00 AM - 10:00 PM<sup>*</sup></li>
+                <li>Sunday: 12:00 PM - 8:00 PM</li>
+            </ul>
+            <p><small><sup>*</sup>Closed from 1:00 PM to 3:00 PM on Fridays for Jumu'ah (Friday prayers).</small></p>        
+        </section>
+        <section>
+            <h4>Contact Information</h4>
+            <ul>
+                <li>Address: 123 Main Street, Toledo, OH 43606</li>
+                <li>Phone: <a href="tel:7708339267">770-833-9267</a></li>
+                <li>Email: <a href="mailto:info@twospoonshalal.com">info@twospoonshalal.com</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2024 Two Spoons Halal Restaurant. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
