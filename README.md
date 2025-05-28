@@ -1,1 +1,1 @@
-# These are my HTML CSS JS practices from scratch
+# These are my HTML practices from scratch
