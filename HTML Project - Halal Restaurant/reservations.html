@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Two Spoons</title>
+</head>
+<body>
+    <header>
+        <img src="assets/twoSpoonsLogo.png" alt="Two Spoons Halal Restaurant Logo" width="200" height=auto>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="catering.html">Catering Services</a></li>
+            </ul>
+            <h3>770-833-9267</h3>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Make a Reservation</h2>
+            <form action="submit" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="First and Last name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" min="11:00" max="21:00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" max="15" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requests">Special Requests:</label>
+                        <textarea id="requests" name="requests" rows="4" placeholder="Any dietary requirements or special occasions?"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+        </section>
+
+        <section class="reservation-policies">
+            <h2>Reservation Policies</h2>
+            <article>
+                <h3>General Policy</h3>
+                <ul>
+                    <li>Reservations are held for 15 minutes past the booking time</li>
+                    <li>Tables for 2-4 people are reserved for up to 2 hours</li>
+                    <li>Tables for 5 or more are reserved for up to 2.5 hours</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Large Group Bookings</h3>
+                <ul>
+                    <li>Groups of 8-15 require a 20% deposit</li>
+                    <li>For parties larger than 15, please contact us directly</li>
+                    <li>Set menu options available for large groups</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Cancellation Policy</h3>
+                <ul>
+                    <li>Free cancellation up to 24 hours before your reservation</li>
+                    <li>Late cancellations may incur a fee</li>
+                    <li>No-shows will forfeit their deposit</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="catering.html">Catering Services</a></li>
+            </ul>
+        </section>
+        <section>
+            <h4>Business Hours</h4>
+            <ul>
+                <li>Monday - Thursday: 11:00 AM - 9:00 PM</li>
+                <li>Friday - Saturday: 11:00 AM - 10:00 PM<sup>*</sup></li>
+                <li>Sunday: 12:00 PM - 8:00 PM</li>
+            </ul>
+            <p><sup>*</sup>Closed from 1:00 PM to 3:00 PM on Fridays for Jumu'ah (Friday prayers).</p>
+        </section>
+        <section>
+            <h4>Contact Information</h4>
+            <ul>
+                <li>Address: 123 Main Street, Toledo, OH 43606</li>
+                <li>Phone: <a href="tel:7708339267">770-833-9267</a></li>
+                <li>Email: <a href="mailto:info@twospoonshalal.com">info@twospoonshalal.com</a></li>
+            </ul>
+        </section>
+            <p><small><sup>*</sup>Closed from 1:00 PM to 3:00 PM on Fridays for Jumu'ah (Friday prayers).</small></p>        
+            <p>Follow us on:
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
